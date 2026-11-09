@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Bênção com Nome — Bênçãos e Histórias de Fé</title>
+  <meta name="description" content="Vídeos de fé, bênçãos personalizadas e materiais para família. Conteúdo feito com IA." />
+  <style>
+    :root {
+      --bg: #0f1419;
+      --card: #1a2332;
+      --text: #f4f1ea;
+      --muted: #a8b0bc;
+      --accent: #c9a227;
+      --accent2: #2d6a4f;
+      --line: #2a3544;
+      --radius: 14px;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background: radial-gradient(1200px 600px at 50% -10%, #1e3a2f 0%, var(--bg) 55%);
+      color: var(--text);
+      min-height: 100dvh;
+      line-height: 1.45;
+    }
+    .wrap {
+      max-width: 420px;
+      margin: 0 auto;
+      padding: 28px 18px 48px;
+    }
+    .badge {
+      display: inline-block;
+      font-size: 11px;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--accent);
+      border: 1px dashed var(--accent);
+      padding: 4px 10px;
+      border-radius: 999px;
+      margin-bottom: 14px;
+    }
+    .avatar {
+      width: 88px; height: 88px;
+      border-radius: 50%;
+      background: linear-gradient(145deg, #3d5a45, #1a2332);
+      border: 2px solid var(--accent);
+      margin: 0 auto 14px;
+      display: grid; place-items: center;
+      font-size: 34px;
+    }
+    h1 {
+      font-size: 1.35rem;
+      text-align: center;
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+    .tagline {
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.95rem;
+      margin-bottom: 22px;
+    }
+    .note {
+      text-align: center;
+      font-size: 0.78rem;
+      color: var(--muted);
+      margin-bottom: 18px;
+      padding: 8px 12px;
+      background: rgba(255,255,255,0.03);
+      border-radius: 10px;
+      border: 1px solid var(--line);
+    }
+    .links { display: flex; flex-direction: column; gap: 12px; }
+    a.btn {
+      display: block;
+      text-decoration: none;
+      color: var(--text);
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 16px 16px 14px;
+      transition: border-color .15s, transform .15s;
+    }
+    a.btn:active { transform: scale(0.98); }
+    a.btn.primary {
+      background: linear-gradient(180deg, #356f52, var(--accent2));
+      border-color: #3f8a66;
+    }
+    a.btn.gold {
+      background: linear-gradient(180deg, #8a7220, #5c4a12);
+      border-color: var(--accent);
+    }
+    .btn-title { font-weight: 650; font-size: 1.02rem; }
+    .btn-sub { color: var(--muted); font-size: 0.82rem; margin-top: 4px; }
+    a.btn.primary .btn-sub, a.btn.gold .btn-sub { color: rgba(244,241,234,0.82); }
+    .price {
+      float: right;
+      font-weight: 700;
+      color: var(--accent);
+      font-size: 0.95rem;
+    }
+    a.btn.primary .price, a.btn.gold .price { color: #ffe08a; }
+    footer {
+      margin-top: 28px;
+      text-align: center;
+      font-size: 0.72rem;
+      color: var(--muted);
+    }
+    footer a { color: var(--muted); }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <div class="avatar" aria-hidden="true">✝</div>
+    <h1>Bênção com Nome</h1>
+    <p class="tagline" style="margin-top:-6px">@BencaoComNome</p>
+    <p class="tagline">Histórias de fé, bênçãos com nome e materiais para a família.</p>
+    <p class="note">Alguns vídeos desta página são feitos ou editados com inteligência artificial.</p>
+
+    <nav class="links" aria-label="Produtos">
+      <a class="btn primary" href="https://pay.hotmart.com/XXXXXXXBENCAO">
+        <span class="price">R$&nbsp;39,90</span>
+        <div class="btn-title">Vídeo com o nome de quem você ama</div>
+        <div class="btn-sub">Vídeo personalizado (Natal, aniversário ou bênção) · entrega sob demanda</div>
+      </a>
+
+      <a class="btn" href="https://pay.hotmart.com/XXXXXXXDEVOCIONAL">
+        <span class="price">R$&nbsp;27</span>
+        <div class="btn-title">Devocional 30 Dias</div>
+        <div class="btn-sub">PDF para família · orações + reflexões · download imediato</div>
+      </a>
+
+      <a class="btn" href="https://pay.hotmart.com/XXXXXXXFABRICA">
+        <span class="price">R$&nbsp;47</span>
+        <div class="btn-title">Fábrica de Shorts Bíblicos</div>
+        <div class="btn-sub">Prompts, roteiros e passo a passo para criar vídeos com IA</div>
+      </a>
+
+      <a class="btn gold" href="https://pay.hotmart.com/XXXXXXXCOMBO">
+        <span class="price">R$&nbsp;59,90</span>
+        <div class="btn-title">Combo Natal</div>
+        <div class="btn-sub">Vídeo com nome + Devocional 30 Dias</div>
+      </a>
+    </nav>
+
+    <footer>
+      Pagamento seguro via Hotmart · Pix, cartão e boleto.
+    </footer>
+  </main>
+</body>
+</html>
