@@ -4,119 +4,120 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Bênção com Nome · @BencaoComNome</title>
-<meta name="description" content="Uma bênção em vídeo, com o nome de quem você ama. Vídeos personalizados, devocional em família e mais.">
-<meta name="theme-color" content="#F8F2E7">
+<meta name="description" content="Orações e bênçãos com o nome de quem você ama. Vídeos personalizados e devocional em família.">
+<meta name="theme-color" content="#F5EFE3">
 <meta property="og:title" content="Bênção com Nome">
-<meta property="og:description" content="Uma bênção em vídeo, com o nome de quem você ama.">
+<meta property="og:description" content="Orações e bênçãos com o nome de quem você ama.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+<!--
+  Links de checkout (v4 — ainda NÃO publicar / NÃO fazer push sem ok do Eduardo):
+  Bênção com Seu Nome  https://pay.hotmart.com/F108419183N?off=r2d8o24t  (R$ 29,90, já no ar)
+  Devocional 30 Dias   https://pay.hotmart.com/Y108419119S?off=8dqarhj1  (R$ 27, já no ar)
+  Combo de Natal       https://pay.hotmart.com/V108419230O?off=ahg2iy7a  (R$ 47, pendente de aprovação na Hotmart)
+  Bênção da Família    https://pay.hotmart.com/U108419220Y?off=8n32nfff  (não há card deste produto nesta página)
+  O botão #WHATSAPP_ORACAO foi removido: não há canal de WhatsApp, e mailto não entrega a oração da manhã.
+  Site ao vivo atual: https://bencaocomnome.github.io/ (org BencaoComNome, repo bencaocomnome.github.io, branch main)
+-->
 <style>
   :root{
-    --papel:#F8F2E7;
-    --papel-2:#FDFAF4;
-    --tinta:#2F2721;
+    --papel:#F5EFE3;
+    --papel-2:#FBF8F1;
+    --tinta:#3B2F25;
     --tinta-suave:#5E534A;
-    --ouro:#A8834A;
+    --ouro:#B8945A;
     --ouro-claro:#E7D6B5;
-    --oliva:#6F7B55;
+    --oliva:#7A7A52;
     --linha:#E6DCCB;
-    --botao:#3A2E26;
+    --botao:#3B2F25;
     --botao-hover:#251D18;
-    --serif:"Cormorant Garamond", Georgia, "Times New Roman", serif;
-    --sans:"DM Sans", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    --serif:"Cormorant Garamond", "Playfair Display", Georgia, serif;
+    --body:"EB Garamond", Georgia, "Times New Roman", serif;
   }
   *{box-sizing:border-box;margin:0;padding:0}
   html{-webkit-text-size-adjust:100%}
   body{
     background:var(--papel);
     color:var(--tinta);
-    font-family:var(--sans);
-    font-size:16px;
+    font-family:var(--body);
+    font-size:17px;
     line-height:1.55;
     -webkit-font-smoothing:antialiased;
   }
   a{color:inherit}
   .pagina{
-    max-width:480px;
+    max-width:430px;
     margin:0 auto;
-    padding:44px 20px 40px;
+    padding:40px 20px 48px;
   }
-  /* ---------- Topo ---------- */
   .topo{text-align:center}
-  .monograma{width:96px;height:96px;display:block;margin:0 auto 18px}
+  .monograma{width:88px;height:88px;display:block;margin:0 auto 16px}
   h1{
     font-family:var(--serif);
     font-weight:600;
-    font-size:2.35rem;
+    font-size:2.15rem;
     line-height:1.05;
-    letter-spacing:.005em;
-  }
-  .arroba{
-    margin-top:6px;
-    font-size:.9rem;
-    color:var(--ouro);
-    letter-spacing:.04em;
-    font-weight:500;
+    letter-spacing:.01em;
   }
   .frase{
     font-family:var(--serif);
     font-style:italic;
     font-weight:500;
-    font-size:1.3rem;
+    font-size:1.18rem;
     line-height:1.35;
     color:var(--tinta-suave);
-    margin:18px auto 0;
-    max-width:20em;
+    margin:14px auto 0;
+    max-width:18em;
   }
-  .filete{display:block;width:140px;height:14px;margin:26px auto 0}
-  /* ---------- Faixa de Natal (remova o bloco .natal quando acabar a época) ---------- */
+  .filete{display:block;width:140px;height:14px;margin:22px auto 0}
   .natal{
-    margin:28px 0 0;
+    margin:26px 0 0;
     display:flex;align-items:center;justify-content:center;gap:10px;
-    font-size:.82rem;letter-spacing:.14em;text-transform:uppercase;
-    color:var(--ouro);font-weight:500;
+    font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;
+    color:var(--ouro);font-weight:500;font-family:var(--serif);
   }
-  .natal svg{width:16px;height:16px;flex:none}
-  /* ---------- Produtos ---------- */
-  .produtos{margin-top:28px;display:grid;gap:18px}
+  .produtos{margin-top:22px;display:grid;gap:14px}
   .produto{
     background:var(--papel-2);
     border:1px solid var(--linha);
     border-radius:4px;
-    padding:24px 22px 22px;
+    padding:22px 20px 20px;
   }
   .rotulo{
-    font-size:.74rem;letter-spacing:.16em;text-transform:uppercase;
+    font-family:var(--serif);
+    font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;
     color:var(--oliva);font-weight:600;
   }
   .produto h2{
     font-family:var(--serif);
     font-weight:600;
-    font-size:1.6rem;
-    line-height:1.12;
-    font-variant-numeric:lining-nums;
+    font-size:1.45rem;
+    line-height:1.15;
     margin-top:6px;
   }
-  .produto p{margin-top:10px;color:var(--tinta-suave);font-size:.98rem}
+  .produto p{margin-top:8px;color:var(--tinta-suave);font-size:1rem}
   .produto .preco{
     font-family:var(--serif);
     font-weight:600;
-    font-size:1.75rem;
+    font-size:1.65rem;
     line-height:1;
-    margin-top:16px;
+    margin-top:14px;
     color:var(--tinta);
-    font-variant-numeric:lining-nums;
   }
-  .produto .preco small{font-family:var(--sans);font-size:.8rem;font-weight:400;color:var(--tinta-suave);margin-left:6px;letter-spacing:0}
+  .produto .preco small{
+    font-family:var(--body);font-size:.85rem;font-weight:400;
+    color:var(--tinta-suave);margin-left:6px;
+  }
   .botao{
     display:flex;align-items:center;justify-content:center;
-    min-height:56px;
-    margin-top:18px;
-    padding:14px 20px;
+    min-height:52px;
+    margin-top:16px;
+    padding:12px 18px;
     background:var(--botao);
-    color:#FBF6EC;
+    color:#FBF8F1;
     text-decoration:none;
+    font-family:var(--serif);
     font-weight:600;
     font-size:1.05rem;
     letter-spacing:.01em;
@@ -129,13 +130,16 @@
     background:transparent;color:var(--tinta);
     border:1.5px solid var(--tinta);
   }
-  .botao.claro:hover{background:var(--tinta);color:#FBF6EC}
-  /* Destaque principal */
+  .botao.claro:hover{background:var(--tinta);color:#FBF8F1}
+  .botao.gratis{
+    background:transparent;color:var(--oliva);
+    border:1.5px solid var(--oliva);
+  }
   .destaque{
     position:relative;
     background:#FFFDF8;
     border:1px solid var(--ouro-claro);
-    padding:30px 24px 26px;
+    padding:26px 22px 22px;
     box-shadow:0 1px 0 var(--ouro-claro), 0 18px 40px -28px rgba(80,55,25,.35);
   }
   .destaque::before{
@@ -143,71 +147,36 @@
     border:1px solid var(--ouro-claro);border-radius:2px;pointer-events:none;
   }
   .destaque > *{position:relative}
-  .destaque .ramo{display:block;width:120px;height:30px;margin:0 auto 14px}
   .destaque .rotulo{text-align:center;display:block;color:var(--ouro)}
-  .destaque h2{font-size:2.05rem;text-align:center;margin-top:8px}
+  .destaque h2{font-size:1.7rem;text-align:center;margin-top:8px}
   .destaque > p{text-align:center}
-  .itens{list-style:none;margin:18px 0 0;border-top:1px solid var(--linha)}
-  .itens li{
-    padding:11px 0 11px 26px;border-bottom:1px solid var(--linha);
-    font-size:.95rem;color:var(--tinta);position:relative;
+  .destaque .preco{text-align:center;font-size:2.1rem;margin-top:18px}
+  .destaque .botao{min-height:56px;font-size:1.08rem}
+  .gratis-bloco{margin-top:8px}
+  footer{margin-top:36px;text-align:center;font-size:.9rem;color:var(--tinta-suave)}
+  .redes{
+    display:flex;justify-content:center;gap:18px;flex-wrap:wrap;
+    margin:0 0 16px;font-family:var(--serif);font-size:.95rem;
   }
-  .itens li::before{
-    content:"";position:absolute;left:4px;top:50%;
-    width:7px;height:7px;margin-top:-4px;
-    border:1.5px solid var(--ouro);transform:rotate(45deg);
-  }
-  .produto.destaque .preco{text-align:center;font-size:2.4rem;margin-top:22px}
-  .produto.destaque .preco small{display:block;margin:6px 0 0}
-  .destaque .botao{min-height:60px;font-size:1.12rem}
-  /* ---------- Como funciona ---------- */
-  .como{margin-top:44px;text-align:center}
-  .como h2{font-family:var(--serif);font-weight:600;font-size:1.65rem;line-height:1.15}
-  .passos{list-style:none;margin-top:20px;text-align:left;display:grid;gap:4px}
-  .passos li{display:flex;gap:16px;align-items:flex-start;padding:12px 4px}
-  .num{
-    flex:none;width:38px;height:38px;border-radius:50%;
-    border:1px solid var(--ouro);color:var(--ouro);
-    font-family:var(--serif);font-weight:600;font-size:1.3rem;
-    font-variant-numeric:lining-nums;line-height:1;
-    display:flex;align-items:center;justify-content:center;
-  }
-  .passos strong{display:block;font-weight:600;font-size:1rem}
-  .passos span{color:var(--tinta-suave);font-size:.94rem}
-  /* ---------- Criadores (discreto) ---------- */
-  .criadores{
-    margin-top:44px;padding-top:28px;border-top:1px solid var(--linha);
-  }
-  .criadores .produto{background:transparent;border-style:dashed}
-  .criadores h2{font-size:1.35rem}
-  .criadores .produto .preco{font-size:1.4rem}
-  .criadores .botao{min-height:52px;font-size:1rem}
-  /* ---------- Rodapé ---------- */
-  footer{margin-top:40px;text-align:center;font-size:.86rem;color:var(--tinta-suave)}
-  footer .seguro{color:var(--tinta);text-wrap:balance}
-  footer .seguro svg{width:15px;height:15px;vertical-align:-2px;margin-right:6px}
-  footer .ia{margin-top:10px;font-size:.78rem;opacity:.85}
-  footer .estrela{display:block;width:22px;height:22px;margin:22px auto 0}
-  @media (min-width:520px){
-    .pagina{padding-top:64px}
-    h1{font-size:2.7rem}
-  }
+  .redes a{color:var(--tinta);text-decoration:none;border-bottom:1px solid var(--ouro-claro);padding-bottom:2px}
+  .redes a:hover{color:var(--ouro)}
+  footer .ia{margin-top:10px;font-size:.78rem;opacity:.9;max-width:28em;margin-left:auto;margin-right:auto}
+  footer .pix{margin-top:12px;font-size:.82rem;color:var(--tinta)}
+  footer .estrela{display:block;width:20px;height:20px;margin:20px auto 0}
   @media (prefers-reduced-motion:reduce){*{transition:none!important}}
 </style>
 </head>
 <body>
 <main class="pagina">
-  <!-- Topo -->
   <header class="topo">
     <svg class="monograma" viewBox="0 0 120 120" role="img" aria-label="Monograma BN">
-      <circle cx="60" cy="60" r="56" fill="none" stroke="#A8834A" stroke-width="1"/>
+      <circle cx="60" cy="60" r="56" fill="none" stroke="#B8945A" stroke-width="1.2"/>
       <circle cx="60" cy="60" r="51" fill="none" stroke="#E7D6B5" stroke-width="1"/>
-      <!-- ramos de oliveira -->
-      <g fill="none" stroke="#6F7B55" stroke-width="1.1" stroke-linecap="round">
+      <g fill="none" stroke="#7A7A52" stroke-width="1.1" stroke-linecap="round">
         <path d="M60 104 C40 100 24 86 20 64"/>
         <path d="M60 104 C80 100 96 86 100 64"/>
       </g>
-      <g fill="#6F7B55" opacity=".85">
+      <g fill="#7A7A52" opacity=".9">
         <ellipse cx="25" cy="78" rx="5" ry="2" transform="rotate(-55 25 78)"/>
         <ellipse cx="33" cy="90" rx="5" ry="2" transform="rotate(-35 33 90)"/>
         <ellipse cx="44" cy="99" rx="5" ry="2" transform="rotate(-15 44 99)"/>
@@ -215,103 +184,62 @@
         <ellipse cx="87" cy="90" rx="5" ry="2" transform="rotate(35 87 90)"/>
         <ellipse cx="76" cy="99" rx="5" ry="2" transform="rotate(15 76 99)"/>
       </g>
-      <!-- estrela -->
-      <path d="M60 14 L61.4 21.6 L67 23 L61.4 24.4 L60 32 L58.6 24.4 L53 23 L58.6 21.6 Z" fill="#A8834A"/>
-      <text x="60" y="76" text-anchor="middle" font-family="Cormorant Garamond, Georgia, serif" font-size="40" font-weight="600" fill="#2F2721" letter-spacing="1">BN</text>
+      <path d="M60 14 L61.4 21.6 L67 23 L61.4 24.4 L60 32 L58.6 24.4 L53 23 L58.6 21.6 Z" fill="#B8945A"/>
+      <text x="60" y="76" text-anchor="middle" font-family="Cormorant Garamond, Georgia, serif" font-size="40" font-weight="600" fill="#3B2F25" letter-spacing="1">BN</text>
     </svg>
     <h1>Bênção com Nome</h1>
-    <p class="arroba">@BencaoComNome</p>
-    <p class="frase">Uma bênção em vídeo, com o nome de quem você ama.</p>
+    <p class="frase">Orações e bênçãos com o nome de quem você ama</p>
     <svg class="filete" viewBox="0 0 140 14" aria-hidden="true">
       <line x1="0" y1="7" x2="58" y2="7" stroke="#E7D6B5"/>
       <line x1="82" y1="7" x2="140" y2="7" stroke="#E7D6B5"/>
-      <path d="M70 1 L71.3 5.7 L76 7 L71.3 8.3 L70 13 L68.7 8.3 L64 7 L68.7 5.7 Z" fill="#A8834A"/>
+      <path d="M70 1 L71.3 5.7 L76 7 L71.3 8.3 L70 13 L68.7 8.3 L64 7 L68.7 5.7 Z" fill="#B8945A"/>
     </svg>
   </header>
-  <!-- NATAL: apague este bloco depois da época -->
-  <p class="natal">
-    <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0.5 L9 6 L15.5 8 L9 10 L8 15.5 L7 10 L0.5 8 L7 6 Z" fill="none" stroke="currentColor" stroke-width=".9" stroke-linejoin="round"/></svg>
+
+  <p class="natal" aria-hidden="true">
+    <svg width="14" height="14" viewBox="0 0 16 16"><path d="M8 0.5 L9 6 L15.5 8 L9 10 L8 15.5 L7 10 L0.5 8 L7 6 Z" fill="none" stroke="currentColor" stroke-width=".9"/></svg>
     Presentes de Natal
-    <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0.5 L9 6 L15.5 8 L9 10 L8 15.5 L7 10 L0.5 8 L7 6 Z" fill="none" stroke="currentColor" stroke-width=".9" stroke-linejoin="round"/></svg>
+    <svg width="14" height="14" viewBox="0 0 16 16"><path d="M8 0.5 L9 6 L15.5 8 L9 10 L8 15.5 L7 10 L0.5 8 L7 6 Z" fill="none" stroke="currentColor" stroke-width=".9"/></svg>
   </p>
-  <!-- /NATAL -->
+
   <section class="produtos" aria-label="Presentes">
-    <!-- Destaque: vídeo com nome -->
     <article class="produto destaque">
-      <svg class="ramo" viewBox="0 0 120 30" aria-hidden="true">
-        <g fill="none" stroke="#6F7B55" stroke-width="1" stroke-linecap="round">
-          <path d="M8 22 C30 22 46 18 58 12"/>
-          <path d="M112 22 C90 22 74 18 62 12"/>
-        </g>
-        <g fill="#6F7B55" opacity=".85">
-          <ellipse cx="20" cy="18" rx="4.5" ry="1.7" transform="rotate(-25 20 18)"/>
-          <ellipse cx="27" cy="25" rx="4.5" ry="1.7" transform="rotate(20 27 25)"/>
-          <ellipse cx="36" cy="15" rx="4.5" ry="1.7" transform="rotate(-35 36 15)"/>
-          <ellipse cx="44" cy="22" rx="4.5" ry="1.7" transform="rotate(10 44 22)"/>
-          <ellipse cx="100" cy="18" rx="4.5" ry="1.7" transform="rotate(25 100 18)"/>
-          <ellipse cx="93" cy="25" rx="4.5" ry="1.7" transform="rotate(-20 93 25)"/>
-          <ellipse cx="84" cy="15" rx="4.5" ry="1.7" transform="rotate(35 84 15)"/>
-          <ellipse cx="76" cy="22" rx="4.5" ry="1.7" transform="rotate(-10 76 22)"/>
-        </g>
-        <path d="M60 2 L61.2 8.8 L68 10 L61.2 11.2 L60 18 L58.8 11.2 L52 10 L58.8 8.8 Z" fill="#A8834A"/>
-      </svg>
-      <span class="rotulo">Para presentear</span>
-      <h2>Vídeo com o nome de quem você ama</h2>
-      <p>Um vídeo curtinho e cheio de carinho, feito com o nome da pessoa, um versículo e uma bênção. É só mandar no WhatsApp.</p>
-      <ul class="itens">
-        <li>De 30 a 45 segundos</li>
-        <li>Nome da pessoa, versículo e bênção</li>
-        <li>Para Natal, aniversário ou família</li>
-        <li>Pronto para enviar no WhatsApp</li>
-      </ul>
-      <p class="preco">R$ 39,90 <small>pagamento único</small></p>
-      <a class="botao" href="https://pay.hotmart.com/XXXXXXXBENCAO" rel="noopener">Quero presentear</a>
+      <span class="rotulo">Destaque</span>
+      <h2>Bênção de Natal com o nome de quem você ama</h2>
+      <p>Vídeo de cerca de 40 segundos, com o nome falado por uma voz acolhedora. Entrega em até 24 horas, por e-mail ou WhatsApp.</p>
+      <p class="preco">R$ 29,90 <small>Pix em destaque</small></p>
+      <a class="botao" href="https://pay.hotmart.com/F108419183N?off=r2d8o24t" rel="noopener">Quero a bênção de Natal</a>
     </article>
-  </section>
-  <!-- Como funciona -->
-  <section class="como" aria-labelledby="como-titulo">
-    <h2 id="como-titulo">Como funciona o vídeo com nome</h2>
-    <ol class="passos">
-      <li><span class="num" aria-hidden="true">1</span><div><strong>Você compra</strong><span>Pelo botão acima, com Pix, cartão ou boleto.</span></div></li>
-      <li><span class="num" aria-hidden="true">2</span><div><strong>Envia o nome e a ocasião</strong><span>Conte para quem é e se é Natal, aniversário ou família.</span></div></li>
-      <li><span class="num" aria-hidden="true">3</span><div><strong>Recebe o vídeo no WhatsApp</strong><span>Pronto para encaminhar a quem você ama.</span></div></li>
-    </ol>
-  </section>
-  <section class="produtos" aria-label="Mais presentes">
-    <!-- Combo Natal -->
+
     <article class="produto">
       <span class="rotulo">Combo de Natal</span>
-      <h2>Vídeo com nome + Devocional 30 Dias</h2>
-      <p>O vídeo personalizado para emocionar no dia e o devocional para a família seguir junta o mês inteiro.</p>
-      <p class="preco">R$ 59,90 <small>os dois juntos</small></p>
-      <a class="botao" href="https://pay.hotmart.com/XXXXXXXCOMBO" rel="noopener">Quero o combo</a>
+      <h2>Bênção + Devocional 30 Dias</h2>
+      <p>O vídeo personalizado e o PDF para a família. O Devocional chega na hora; o vídeo, em até 24 horas.</p>
+      <p class="preco">R$ 47 <small>ou até 3x</small></p>
+      <a class="botao" href="https://pay.hotmart.com/V108419230O?off=ahg2iy7a" rel="noopener">Quero o combo</a>
     </article>
-    <!-- Devocional -->
+
     <article class="produto">
       <span class="rotulo">Para a família</span>
       <h2>Devocional 30 Dias em Família</h2>
-      <p>Um PDF com versículo, reflexão e oração para cada dia. Download imediato, logo após a compra.</p>
+      <p>PDF de 75 páginas: versículo, reflexão e oração para cada dia. Download imediato após o pagamento.</p>
       <p class="preco">R$ 27</p>
-      <a class="botao claro" href="https://pay.hotmart.com/XXXXXXXDEVOCIONAL" rel="noopener">Quero o devocional</a>
+      <a class="botao claro" href="https://pay.hotmart.com/Y108419119S?off=8dqarhj1" rel="noopener">Quero o devocional</a>
     </article>
+
   </section>
-  <!-- Para criadores (discreto) -->
-  <section class="criadores" aria-label="Para criadores de conteúdo">
-    <article class="produto">
-      <span class="rotulo">Para quem cria conteúdo</span>
-      <h2>Fábrica de Shorts Bíblicos</h2>
-      <p>Prompts, roteiros e o passo a passo para criar vídeos bíblicos com inteligência artificial.</p>
-      <p class="preco">R$ 47</p>
-      <a class="botao claro" href="https://pay.hotmart.com/XXXXXXXFABRICA" rel="noopener">Conhecer a Fábrica</a>
-    </article>
-  </section>
+
   <footer>
-    <p class="seguro">
-      <svg viewBox="0 0 16 16" aria-hidden="true"><rect x="3" y="7" width="10" height="7.5" rx="1.2" fill="none" stroke="currentColor" stroke-width="1.2"/><path d="M5.3 7V5a2.7 2.7 0 0 1 5.4 0v2" fill="none" stroke="currentColor" stroke-width="1.2"/></svg>
-      Pagamento seguro via Hotmart · Pix, cartão e boleto
-    </p>
-    <p class="ia">Alguns vídeos são feitos com auxílio de inteligência artificial.</p>
-    <svg class="estrela" viewBox="0 0 22 22" aria-hidden="true"><path d="M11 1 L12.4 9.6 L21 11 L12.4 12.4 L11 21 L9.6 12.4 L1 11 L9.6 9.6 Z" fill="none" stroke="#A8834A" stroke-width=".9" stroke-linejoin="round"/></svg>
+    <nav class="redes" aria-label="Redes">
+      <a href="https://www.tiktok.com/@bencaocomnome" rel="noopener" target="_blank">TikTok</a>
+      <a href="https://www.youtube.com/@BencaoComNome" rel="noopener" target="_blank">YouTube</a>
+      <a href="https://www.instagram.com/abencaocomnome/" rel="noopener" target="_blank">Instagram</a>
+    </nav>
+    <p>@BencaoComNome · Instagram @abencaocomnome</p>
+    <p class="pix">Pagamento via Hotmart · Pix em destaque</p>
+    <p class="pix">Dúvidas: <a href="mailto:bencaocomnome@gmail.com">bencaocomnome@gmail.com</a></p>
+    <p class="ia">Os vídeos usam arte feita com IA e narração com voz digital. São presentes de fé e carinho — não são oração paga nem promessa de milagre.</p>
+    <svg class="estrela" viewBox="0 0 22 22" aria-hidden="true"><path d="M11 1 L12.4 9.6 L21 11 L12.4 12.4 L11 21 L9.6 12.4 L1 11 L9.6 9.6 Z" fill="none" stroke="#B8945A" stroke-width=".9" stroke-linejoin="round"/></svg>
   </footer>
 </main>
 </body>
